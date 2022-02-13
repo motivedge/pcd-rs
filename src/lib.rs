@@ -12,7 +12,7 @@ pub mod metas;
 pub mod prelude;
 pub mod reader;
 pub mod record;
-mod utils;
+pub mod utils;
 pub mod writer;
 
 pub use error::Error;
