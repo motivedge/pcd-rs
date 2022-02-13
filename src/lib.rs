@@ -8,15 +8,18 @@ pub extern crate anyhow;
 pub extern crate byteorder;
 
 pub mod error;
+pub mod helper;
 pub mod metas;
 pub mod prelude;
 pub mod reader;
 pub mod record;
-pub mod utils;
+mod utils;
 pub mod writer;
 
 pub use error::Error;
-pub use metas::{DataKind, FieldDef, PcdMeta, Schema, TypeKind, ValueKind, ViewPoint};
+pub use metas::{
+    DataKind, FieldDef, PcdMeta, Schema, TypeKind, ValueKind, ViewPoint,
+};
 pub use pcd_rs_derive::{PcdDeserialize, PcdSerialize};
 pub use reader::{DynReader, Reader};
 pub use record::{DynRecord, Field, PcdDeserialize, PcdSerialize};
